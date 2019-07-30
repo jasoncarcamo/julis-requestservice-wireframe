@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav id="header-nav">
+                <div id="logo-icon"><Link to="/" >Logo</Link></div>
+
+                <ul class="header-links">
+                    <a href="/register" class="Link">Sign Up</a>
+                    <a href="/login" class="Link"> Log In</a>
+                </ul>
+            </nav>
+        </header>
+    
+        
+        <section id="req_section">
+                <form onSubmit={this.handleSubmit} id="req_form">
+                    
+                    <fieldset>
+
+                        <header><h1>Make a request</h1></header>
+                        
+                        <div class="checkbox-grid">
+
+                            <div>
+                                <label for="req_windows">
+                                    <input type="checkbox" class="checkboxes" id="req_windows" name="Windows"></input>
+                                    Windows
+                                </label>
+
+                                <label for="req_refriderator">
+                                    <input type="checkbox" class="checkboxes" id="req_refridgerator" name="Refridgerator"></input>
+                                    Refridgerator
+                                </label>
+
+                                <label for="req_walls">
+                                    <input type="checkbox" class="checkboxes" id="req_walls" name="walls"></input>
+                                    Walls
+                                </label>
+                            </div>
+
+                            <span id="req_price">$0</span>
+
+                        </div> 
+
+                        <label for="req_days">When?
+                        </label>
+                        <button class="react-date-picker"></button>
+
+                        <label for="req_time">Time:</label>
+                        <button id="req-time" class="react-time-picker"></button>
+
+                        <label for="req_comments">Comments?</label>
+                        <textarea id="req_comments" placeholder="Any specail requests?"></textarea>
+
+                        <button type="submit" id="req_submit">Go</button>
+                    </fieldset>
+                </form>
+            </section>
+    
+        <footer>
+            <p>Copyright Julis Cleaning Company, All rights reserved</p>
+        </footer>
+
+    </body>
+</html>
